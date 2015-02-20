@@ -1,10 +1,31 @@
+=pod
+
 =head1 NAME
 
-Acme::MITHALDU::XSGrabBag
+Acme::MITHALDU::XSGrabBag - a bunch of XS math functions i'm not sure where to shove yet
 
 =head1 VERSION
 
 version 0.000001
+
+=head1 DESCRIPTION
+
+This module is an experimental space for me to work with XS functions meant for
+L<Microidium|https://github.com/wchristian/Microidium>.
+
+=head1 FUNCTIONS
+
+=head2 my $hash = mix( $a, $b, $c )
+
+Takes 3 x 32 bits of data as integers, mixes them, combining all 96 bits of
+input to generate a pseudo-random hash returned as a 32 bit integer.
+
+Original implementation by
+L<Bob Jenkins|http://web.archive.org/web/20071224045401/http://www.burtleburtle.net/bob/c/lookup2.c>.
+
+=head2 my $deg = deg2rad( $rad )
+
+32 bit degree to radian conversion, dirty, but fast.
 
 =for :stopwords cpan testmatrix url annocpan anno bugtracker rt cpants kwalitee diff irc mailto metadata placeholders metacpan
 
@@ -31,6 +52,7 @@ Christian Walde <walde.christian@gmail.com>
 
 =head1 COPYRIGHT AND LICENSE
 
+
 Christian Walde has dedicated the work to the Commons by waiving all of his
 or her rights to the work worldwide under copyright law and all related or
 neighboring legal rights he or she had in the work, to the extent allowable by
@@ -38,3 +60,5 @@ law.
 
 Works under CC0 do not require attribution. When citing the work, you should
 not imply endorsement by the author.
+
+=cut
