@@ -31,7 +31,6 @@ my %WriteMakefileArgs = (
     "warnings" => 0
   },
   "TEST_REQUIRES" => {
-    "Acme::Math::XS" => 0,
     "File::Spec" => 0,
     "File::Temp" => 0,
     "IO::Handle" => 0,
@@ -39,7 +38,7 @@ my %WriteMakefileArgs = (
     "Test::InDistDir" => 0,
     "Test::More" => 0
   },
-  "VERSION" => "1.150510",
+  "VERSION" => "1.150511",
   "postamble" => {
     "inline" => {
       "bundle" => 1,
@@ -60,7 +59,6 @@ my %WriteMakefileArgs = (
 );
 
 my %FallbackPrereqs = (
-  "Acme::Math::XS" => 0,
   "Exporter" => 0,
   "ExtUtils::MakeMaker" => 0,
   "File::Spec" => 0,
