@@ -11,7 +11,7 @@ use Acme::MITHALDU::XSGrabBag::Inline ();
 
 our @EXPORT_OK = qw( mix deg2rad );
 
-sub _func { Acme::MITHALDU::XSGrabBag::Inline->import( C => @_ ) }
+Acme::MITHALDU::XSGrabBag::Inline->import( C => join "\n", _mix(), _deg2rad() );
 
 =head1 DESCRIPTION
 
@@ -30,7 +30,8 @@ L<Bob Jenkins|http://web.archive.org/web/20071224045401/http://www.burtleburtle.
 
 =cut
 
-_func <<'...';
+sub _mix {
+    <<'...';
 int mix(int a, int b, int c) {
     a -= b; a -= c; a ^= (c>>13);
     b -= c; b -= a; b ^= (a<<8);
@@ -44,7 +45,7 @@ int mix(int a, int b, int c) {
     return c;
 }
 ...
-
+}
 
 =head2 my $deg = deg2rad( $rad )
 
@@ -52,10 +53,12 @@ int mix(int a, int b, int c) {
 
 =cut
 
-_func <<'...';
+sub _deg2rad {
+    <<'...';
 float deg2rad(float degrees) {
     return 0.0174532925 * degrees;
 }
 ...
+}
 
 1;
