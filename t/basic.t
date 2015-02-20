@@ -3,14 +3,13 @@ use strictures;
 use Test::InDistDir;
 use Test::More;
 
-use Acme::Math::XS qw' mix deg2rad ';
+use Acme::MITHALDU::XSGrabBag qw' mix deg2rad ';
 
 run();
 done_testing;
 exit;
 
 sub run {
-
     is mix( 1, 2, 1 ), -2046868284;
     is mix( 1, 2, 1 ), -2046868284;
     is mix( 1, 2, 1 ), -2046868284;
