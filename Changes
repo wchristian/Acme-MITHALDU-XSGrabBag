@@ -2,6 +2,9 @@ Revision history for {{$dist->name}}
 
 {{$NEXT}}
 
+1.150590  2015-02-28 13:28:31+01:00 Europe/Berlin
+    - rerelease with updated plugin bundle
+
 1.150511  2015-02-20 14:22:25+01:00 Europe/Berlin
     - correct the module used in the test
 
