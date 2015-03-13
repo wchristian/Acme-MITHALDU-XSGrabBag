@@ -9,9 +9,18 @@ use Acme::MITHALDU::XSGrabBag::Inline ();
 
 # COPYRIGHT
 
-our @EXPORT_OK = qw( mix deg2rad );
+our @EXPORT_OK = qw(
+  mix
+  deg2rad
+  rad2deg
+);
 
-Acme::MITHALDU::XSGrabBag::Inline->import( C => join "\n", _mix(), _deg2rad() );
+Acme::MITHALDU::XSGrabBag::Inline->import(
+    C => join "\n",
+    _mix(),
+    _deg2rad(),
+    _rad2deg(),
+);
 
 =head1 DESCRIPTION
 
@@ -57,6 +66,20 @@ sub _deg2rad {
     <<'...';
 float deg2rad(float degrees) {
     return 0.0174532925 * degrees;
+}
+...
+}
+
+=head2 my $rad = rad2deg( $deg )
+
+32 bit radian to degree conversion, dirty, but fast.
+
+=cut
+
+sub _rad2deg {
+    <<'...';
+float rad2deg(float radians) {
+    return 57.2957795786 * radians;
 }
 ...
 }

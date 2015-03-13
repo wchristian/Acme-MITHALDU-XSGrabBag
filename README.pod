@@ -27,6 +27,10 @@ L<Bob Jenkins|http://web.archive.org/web/20071224045401/http://www.burtleburtle.
 
 32 bit degree to radian conversion, dirty, but fast.
 
+=head2 my $rad = rad2deg( $deg )
+
+32 bit radian to degree conversion, dirty, but fast.
+
 =for :stopwords cpan testmatrix url annocpan anno bugtracker rt cpants kwalitee diff irc mailto metadata placeholders metacpan
 
 =head1 SUPPORT
