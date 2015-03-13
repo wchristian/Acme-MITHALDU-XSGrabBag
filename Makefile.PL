@@ -38,7 +38,7 @@ my %WriteMakefileArgs = (
     "Test::InDistDir" => 0,
     "Test::More" => 0
   },
-  "VERSION" => "1.150590",
+  "VERSION" => "1.150720",
   "postamble" => {
     "inline" => {
       "bundle" => 1,

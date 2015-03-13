@@ -2,6 +2,10 @@ Revision history for {{$dist->name}}
 
 {{$NEXT}}
 
+1.150720  2015-03-13 18:32:15+01:00 Europe/Berlin
+    - add dot2_product
+    - add rad2deg
+
 1.150590  2015-02-28 13:28:31+01:00 Europe/Berlin
     - rerelease with updated plugin bundle
 
