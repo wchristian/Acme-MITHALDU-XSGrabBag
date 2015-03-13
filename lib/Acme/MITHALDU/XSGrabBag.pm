@@ -13,6 +13,7 @@ our @EXPORT_OK = qw(
   mix
   deg2rad
   rad2deg
+  dot2_product
 );
 
 Acme::MITHALDU::XSGrabBag::Inline->import(
@@ -20,6 +21,7 @@ Acme::MITHALDU::XSGrabBag::Inline->import(
     _mix(),
     _deg2rad(),
     _rad2deg(),
+    _dot2_product(),
 );
 
 =head1 DESCRIPTION
@@ -80,6 +82,23 @@ sub _rad2deg {
     <<'...';
 float rad2deg(float radians) {
     return 57.2957795786 * radians;
+}
+...
+}
+
+=head2 my $dot = dot2_product( $xa, $ya, $xb, $yb )
+
+Simple dot product calculation for 2d vectors.
+
+=cut
+
+sub _dot2_product {
+    <<'...';
+int dot2_product( int xa, int ya, int xb, int yb ) {
+    int sum = 0;
+    sum += xa * xb;
+    sum += ya * yb;
+    return sum;
 }
 ...
 }

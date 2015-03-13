@@ -31,6 +31,10 @@ L<Bob Jenkins|http://web.archive.org/web/20071224045401/http://www.burtleburtle.
 
 32 bit radian to degree conversion, dirty, but fast.
 
+=head2 my $dot = dot2_product( $xa, $ya, $xb, $yb )
+
+Simple dot product calculation for 2d vectors.
+
 =for :stopwords cpan testmatrix url annocpan anno bugtracker rt cpants kwalitee diff irc mailto metadata placeholders metacpan
 
 =head1 SUPPORT

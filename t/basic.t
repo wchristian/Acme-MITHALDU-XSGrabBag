@@ -7,6 +7,7 @@ use Acme::MITHALDU::XSGrabBag qw'
   mix
   deg2rad
   rad2deg
+  dot2_product
   ';
 
 run();
@@ -37,6 +38,8 @@ sub run {
     is rad2deg( 0.0174532923847437 ), 1;
     is rad2deg( 3.14159274101257 ),   180;
     is rad2deg( 6.28318548202515 ),   360;
+
+    is dot2_product( 1, 3, 4, -2 ), -2;
 
     return;
 }
