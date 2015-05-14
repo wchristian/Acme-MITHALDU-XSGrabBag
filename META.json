@@ -4,7 +4,7 @@
       "Christian Walde <walde.christian@gmail.com>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Zilla version 5.031, CPAN::Meta::Converter version 2.143240",
+   "generated_by" : "Dist::Zilla version 5.036, CPAN::Meta::Converter version 2.143240",
    "license" : [
       "unrestricted"
    ],
@@ -55,6 +55,7 @@
             "IPC::Open3" : "0",
             "Test::InDistDir" : "0",
             "Test::More" : "0",
+            "Test::Number::Delta" : "0",
             "perl" : "5.006"
          }
       }
@@ -62,11 +63,11 @@
    "provides" : {
       "Acme::MITHALDU::XSGrabBag" : {
          "file" : "lib/Acme/MITHALDU/XSGrabBag.pm",
-         "version" : "1.150720"
+         "version" : "1.151340"
       },
       "Acme::MITHALDU::XSGrabBag::Inline" : {
          "file" : "lib/Acme/MITHALDU/XSGrabBag/Inline.pm",
-         "version" : "1.150720"
+         "version" : "1.151340"
       }
    },
    "release_status" : "stable",
@@ -82,6 +83,6 @@
          "web" : "https://github.com/wchristian/Acme-MITHALDU-XSGrabBag"
       }
    },
-   "version" : "1.150720"
+   "version" : "1.151340"
 }
 

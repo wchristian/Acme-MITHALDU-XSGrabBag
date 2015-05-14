@@ -12,6 +12,7 @@ on 'test' => sub {
   requires "IPC::Open3" => "0";
   requires "Test::InDistDir" => "0";
   requires "Test::More" => "0";
+  requires "Test::Number::Delta" => "0";
   requires "perl" => "5.006";
 };
 
