@@ -2,6 +2,7 @@ package basic_test;
 use strictures;
 use Test::InDistDir;
 use Test::More;
+use Test::Number::Delta;
 
 use Acme::MITHALDU::XSGrabBag qw'
   mix
@@ -29,15 +30,15 @@ sub run {
     is mix( 3, 2, 3 ), -1833207769;
     is mix( 3, 2, 4 ), -766896240;
 
-    is deg2rad( 0 ),   0;
-    is deg2rad( 1 ),   0.0174532923847437;
-    is deg2rad( 180 ), 3.14159274101257;
-    is deg2rad( 360 ), 6.28318548202515;
+    is deg2rad( 0 ),         0;
+    delta_ok deg2rad( 1 ),   0.0174532923847437;
+    delta_ok deg2rad( 180 ), 3.14159274101257;
+    delta_ok deg2rad( 360 ), 6.28318548202515;
 
-    is rad2deg( 0 ),                  0;
-    is rad2deg( 0.0174532923847437 ), 1;
-    is rad2deg( 3.14159274101257 ),   180;
-    is rad2deg( 6.28318548202515 ),   360;
+    is rad2deg( 0 ),                        0;
+    delta_ok rad2deg( 0.0174532923847437 ), 1;
+    delta_ok rad2deg( 3.14159274101257 ),   180;
+    delta_ok rad2deg( 6.28318548202515 ),   360;
 
     is dot2_product( 1, 3, 4, -2 ), -2;
 
