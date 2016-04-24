@@ -2,6 +2,9 @@ Revision history for {{$dist->name}}
 
 {{$NEXT}}
 
+1.161150  2016-04-24 14:37:54+02:00 Europe/Berlin
+    - making a test fail to check cpantesters
+
 1.151340  2015-05-14 23:14:27+02:00 Europe/Berlin
     - do tests within a tolerance instead of using equality comparison
       (thanks to DAXIM)
