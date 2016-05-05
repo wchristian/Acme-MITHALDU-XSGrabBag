@@ -41,8 +41,6 @@ sub run {
     delta_ok rad2deg( 6.28318548202515 ),   360;
 
     is dot2_product( 1, 3, 4, -2 ), -2;
-    
-    fail "for cpantesters" if $ENV{USERNAME} ne "Mithaldu";
 
     return;
 }
