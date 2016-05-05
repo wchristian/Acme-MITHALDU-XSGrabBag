@@ -66,11 +66,11 @@
    "provides" : {
       "Acme::MITHALDU::XSGrabBag" : {
          "file" : "lib/Acme/MITHALDU/XSGrabBag.pm",
-         "version" : "1.161150"
+         "version" : "1.161260"
       },
       "Acme::MITHALDU::XSGrabBag::Inline" : {
          "file" : "lib/Acme/MITHALDU/XSGrabBag/Inline.pm",
-         "version" : "1.161150"
+         "version" : "1.161260"
       }
    },
    "release_status" : "stable",
@@ -86,6 +86,6 @@
          "web" : "https://github.com/wchristian/Acme-MITHALDU-XSGrabBag"
       }
    },
-   "version" : "1.161150"
+   "version" : "1.161260"
 }
 
