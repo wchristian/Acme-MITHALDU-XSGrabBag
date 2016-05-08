@@ -24,6 +24,7 @@ my %WriteMakefileArgs = (
   "NAME" => "Acme::MITHALDU::XSGrabBag",
   "PREREQ_PM" => {
     "Exporter" => 0,
+    "Inline::C" => 0,
     "Inline::Module" => 0,
     "strict" => 0,
     "strictures" => 0,
@@ -65,6 +66,7 @@ my %FallbackPrereqs = (
   "File::Temp" => 0,
   "IO::Handle" => 0,
   "IPC::Open3" => 0,
+  "Inline::C" => 0,
   "Inline::Module" => 0,
   "Test::InDistDir" => 0,
   "Test::More" => 0,
@@ -83,5 +85,9 @@ unless ( eval { ExtUtils::MakeMaker->VERSION(6.63_03) } ) {
 
 delete $WriteMakefileArgs{CONFIGURE_REQUIRES}
   unless eval { ExtUtils::MakeMaker->VERSION(6.52) };
+
+if ( $^O eq 'MSWin32' ) {
+	$WriteMakefileArgs{PREREQ_PM}{'Win32::Mutex'} = '0';
+}
 
 WriteMakefile(%WriteMakefileArgs);

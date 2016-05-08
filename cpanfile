@@ -1,4 +1,5 @@
 requires "Exporter" => "0";
+requires "Inline::C" => "0";
 requires "Inline::Module" => "0";
 requires "perl" => "5.006";
 requires "strict" => "0";

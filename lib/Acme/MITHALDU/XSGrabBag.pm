@@ -2,6 +2,7 @@ package Acme::MITHALDU::XSGrabBag;
 use strictures;
 use Exporter 'import';
 use Acme::MITHALDU::XSGrabBag::Inline ();
+use Inline::C                         ();
 
 # VERSION
 
