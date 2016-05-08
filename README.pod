@@ -6,7 +6,7 @@ Acme::MITHALDU::XSGrabBag - a bunch of XS math functions i'm not sure where to s
 
 =head1 VERSION
 
-version 1.161260
+version 1.161290
 
 =head1 DESCRIPTION
 

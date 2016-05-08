@@ -2,6 +2,9 @@ Revision history for {{$dist->name}}
 
 {{$NEXT}}
 
+1.161290  2016-05-08 17:51:14+02:00 Europe/Berlin
+    - add implicit deps so i can see their versions in test fails
+
 1.161260  2016-05-05 14:00:18+02:00 Europe/Berlin
     - reverting back to normal
 

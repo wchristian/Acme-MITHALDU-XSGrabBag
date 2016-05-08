@@ -40,7 +40,7 @@ my %WriteMakefileArgs = (
     "Test::Number::Delta" => 0,
     "blib" => "1.01"
   },
-  "VERSION" => "1.161260",
+  "VERSION" => "1.161290",
   "postamble" => {
     "inline" => {
       "bundle" => 1,
