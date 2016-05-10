@@ -42,7 +42,7 @@
       "runtime" : {
          "requires" : {
             "Exporter" : "0",
-            "Inline::C" : "0",
+            "Inline::C" : "0.74",
             "Inline::Module" : "0",
             "perl" : "5.006",
             "strict" : "0",
@@ -67,11 +67,11 @@
    "provides" : {
       "Acme::MITHALDU::XSGrabBag" : {
          "file" : "lib/Acme/MITHALDU/XSGrabBag.pm",
-         "version" : "1.161290"
+         "version" : "1.161310"
       },
       "Acme::MITHALDU::XSGrabBag::Inline" : {
          "file" : "lib/Acme/MITHALDU/XSGrabBag/Inline.pm",
-         "version" : "1.161290"
+         "version" : "1.161310"
       }
    },
    "release_status" : "stable",
@@ -87,6 +87,6 @@
          "web" : "https://github.com/wchristian/Acme-MITHALDU-XSGrabBag"
       }
    },
-   "version" : "1.161290"
+   "version" : "1.161310"
 }
 

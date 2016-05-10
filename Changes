@@ -2,6 +2,9 @@ Revision history for {{$dist->name}}
 
 {{$NEXT}}
 
+1.161310  2016-05-10 04:34:38+02:00 Europe/Berlin
+    - depend on a known stable version of Inline::C
+
 1.161290  2016-05-08 17:51:14+02:00 Europe/Berlin
     - add implicit deps so i can see their versions in test fails
 
